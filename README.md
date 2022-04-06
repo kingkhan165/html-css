@@ -1,2 +1,2 @@
-# wordpress
-my first wordpress assignments
+# html
+my first html assignments
