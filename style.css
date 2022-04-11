@@ -1,0 +1,55 @@
+body {
+    background-image: url(world.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.typing {
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 500px;
+    font-family: cursive;
+    color: aquamarine;
+    text-shadow: 3px 3px 3px rgb(224, 176, 176);
+    font-size: 70px;
+    animation: type 4s steps(22);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 22ch;
+    text-transform: capitalize;
+}
+
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 22ch;
+    }
+}
+
+
+.button {
+    border: 1px solid rgb(145, 92, 182);
+    border-radius: 10px;
+    margin-left: 430px;
+    margin-top: 200px;
+    height: 100px;
+    width: 200px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(103, 66, 129, 0.4);
+    background-color: rgb(145, 92, 182);
+}
+
+
+.button a {
+    color: aliceblue;
+    text-transform: uppercase;
+    word-spacing: 20px;
+}
