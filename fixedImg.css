@@ -1,0 +1,55 @@
+.bgimg {
+    background-image: url(fixedImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+.bgimg h1 {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 35px;
+    margin-left: 435px;
+    color: whitesmoke;
+    opacity: 0.6;
+    text-shadow: 3px 3px 3px rgb(44, 40, 40);
+    animation: type 4s steps(8);
+    overflow: hidden;
+    width: 8ch;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;color: red;
+    }
+    100% {
+        width: 8ch;color: pink;
+    }
+}
+
+.one {
+    background-color: teal;
+    height: 200px;
+    text-align: center;
+    /* margin-top: 100px; */
+    padding-top: 80px;
+    font-family: cursive;
+    animation: slide 4s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0% {
+        color: red;
+    }
+    50% {
+        color: palevioletred;
+    }
+    100% {
+        color: pink;
+    }
+}
