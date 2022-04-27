@@ -1,0 +1,288 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body {
+  background-color: #e5a1c2;
+}
+
+.header {
+  background-image: url(web-headerImg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  /* padding-top: 80px; */
+  border-radius: 3px;
+}
+
+.header-logo img {
+  height: 35px;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.header h1 {
+  text-align: center;
+  font-family: cursive;
+  color: whitesmoke;
+  margin: auto;
+  /* padding-top: 40px; */
+  font-size: 35px;
+}
+
+.header p {
+  text-align: center;
+  font-family: cursive;
+  color: whitesmoke;
+  margin: auto;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+.btn {
+  margin-left: 430px;
+  width: 500px;
+  margin-top: 40px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.btn input {
+  height: 38px;
+  width: 460px;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: cursive;
+}
+
+.nav {
+  width: 92%;
+  height: 50px;
+  margin: auto;
+  /* background-color: black; */
+}
+
+.nav ul {
+  padding: 0px;
+  margin-bottom: -16px;
+}
+
+.nav ul li {
+  float: left;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #e5a1c2;
+  color: whitesmoke;
+  list-style: none;
+  opacity: 0.5;
+}
+
+.nav ul li ul {
+  display: none;
+}
+
+.nav ul li:hover > ul {
+  display: inline-block;
+}
+
+.nav ul li:hover {
+  background-color: pink;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.nav .fa {
+  margin-right: 8px;
+}
+
+.bgimg {
+  background-image: url(web-fixedImg1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-attachment: fixed;
+  padding-top: 100px;
+}
+
+.bgimg h1 {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 35px;
+  margin-left: 435px;
+  color: whitesmoke;
+  opacity: 0.6;
+  text-shadow: 3px 3px 3px rgb(44, 40, 40);
+  animation: type 4s steps(8);
+  overflow: hidden;
+  width: 8ch;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+    color: red;
+  }
+  100% {
+    width: 8ch;
+    color: pink;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: space-around;
+  text-align: center;
+  /* background-color: #E5A1C2; */
+  height: 600px;
+}
+
+.item {
+  width: 300px;
+  height: 500px;
+  border-radius: 20px 70px;
+  border: 2px solid palevioletred;
+  background-size: cover;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  transform: scale(0.9);
+}
+
+.card1 {
+  position: relative;
+  background-image: url(web-img1.webp);
+}
+
+.card1:hover {
+  background-image: url(web-img2.webp);
+}
+
+.card2 {
+  position: relative;
+  background-image: url(web-img3.webp);
+}
+
+.card2:hover {
+  background-image: url(web-img4.webp);
+}
+
+.card3 {
+  position: relative;
+  background-image: url(web-img5.webp);
+}
+
+.card3:hover {
+  background-image: url(web-img6.jpg);
+}
+
+.card4 {
+  position: relative;
+  background-image: url(web-img7.jpg);
+}
+
+.card4:hover {
+  background-image: url(web-img8.jpg);
+}
+
+.hero h1 {
+  margin-top: 550px;
+}
+
+.item h1,
+p {
+  font-family: cursive;
+  color: whitesmoke;
+}
+
+.footer {
+  margin-top: 100px;
+  height: 500px;
+  background-color: #e5a1c2;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-left: 580px;
+  margin-top: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.about {
+  flex: 50%;
+}
+
+.contact {
+  flex: 50%;
+  /* margin-left: 100px; */
+}
+
+.about h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: cursive;
+}
+
+.about p {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.contact h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: cursive;
+}
+
+.contact ul {
+  list-style: none;
+  font-family: cursive;
+  color: whitesmoke;
+}
+
+.contact ul li {
+  padding: 10px;
+  margin-left: 33%;
+}
+
+.contact .fa {
+  margin-right: 8px;
+}
+
+.follow {
+  text-align: center;
+}
+
+.follow h1 {
+  font-family: cursive;
+  color: whitesmoke;
+}
+
+.follow i {
+  width: 80px;
+  font-size: 40px;
+}
+
+.follow a i {
+  color: rgb(58, 57, 57);
+}
+
+.follow i:hover {
+  color: deeppink;
+  transform: scale(1.2);
+}
