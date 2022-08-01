@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Julius+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>scroll</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Comfortaa", cursive;
+        font-family: "Julius Sans One", sans-serif;
+      }
+
+      body {
+        /* display: flex;
+        justify-content: center;
+        align-content: center; */
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 100px;
+      }
+      .container {
+        /* margin-top: 50px; */
+        display: flex;
+        overflow-x: scroll;
+        border: 2px solid gray;
+        border-radius: 15px 15px 0 0;
+        padding: 10px;
+        width: 320px;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 24px;
+        gap: 10px;
+        margin: auto;
+        margin-top: 30px;
+      }
+
+      .container::-webkit-scrollbar {
+        height: 10px;
+        /* background-color: aqua; */
+      }
+
+      .container::-webkit-scrollbar-thumb {
+        /* background-color: gray; */
+        border: 1px solid gray;
+        background-image: linear-gradient(to right, pink, skyblue);
+        width: 10px;
+        border-radius: 4px;
+      }
+
+      .container .box {
+        flex: 0 0 100%;
+        border: 1px solid gray;
+        border-radius: 15px 15px 0 0;
+        padding: 24px;
+        scroll-snap-align: start;
+        background-image: linear-gradient(to right, pink, skyblue);
+      }
+      .container .box h1 {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Box-Scroll</h2>
+    <div class="container">
+      <div class="box one">
+        <h1>heading 1</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+          voluptates eum consequatur aut officiis laboriosam natus reiciendis id
+          impedit, officia optio porro. Quasi sed natus architecto molestias,
+          tempora quidem fuga. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Deleniti laboriosam autem vero voluptates aut rem
+          iusto?
+        </p>
+      </div>
+      <div class="box two">
+        <h1>heading 2</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+          voluptates eum consequatur aut officiis laboriosam natus reiciendis id
+          impedit, officia optio porro. Quasi sed natus architecto molestias,
+          tempora quidem fuga. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Deleniti laboriosam autem vero voluptates aut rem
+          iusto?
+        </p>
+      </div>
+      <div class="box three">
+        <h1>heading 3</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+          voluptates eum consequatur aut officiis laboriosam natus reiciendis id
+          impedit, officia optio porro. Quasi sed natus architecto molestias,
+          tempora quidem fuga. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Deleniti laboriosam autem vero voluptates aut rem
+          iusto?
+        </p>
+      </div>
+      <div class="box four">
+        <h1>heading 4</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+          voluptates eum consequatur aut officiis laboriosam natus reiciendis id
+          impedit, officia optio porro. Quasi sed natus architecto molestias,
+          tempora quidem fuga. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Deleniti laboriosam autem vero voluptates aut rem
+          iusto?
+        </p>
+      </div>
+      <div class="box five">
+        <h1>heading 5</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+          voluptates eum consequatur aut officiis laboriosam natus reiciendis id
+          impedit, officia optio porro. Quasi sed natus architecto molestias,
+          tempora quidem fuga. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Deleniti laboriosam autem vero voluptates aut rem
+          iusto?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
