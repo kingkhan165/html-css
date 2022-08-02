@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sticky_scroll</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Comfortaa", cursive;
+        font-family: "Julius Sans One", sans-serif;
+      }
+
+      .container_list {
+        background-color: skyblue;
+        border: 2px solid pink;
+        border-radius: 10px;
+        height: 130px;
+        overflow: auto;
+        position: relative;
+        top: 200px;
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      .container_list::-webkit-scrollbar {
+        width: 10px;
+        background-color: skyblue;
+        border: 2px solid pink;
+      }
+
+      .container_list::-webkit-scrollbar-thumb {
+        border: 1px solid palevioletred;
+        background-color: pink;
+        border-radius: 0 6px 6px 0;
+        width: 10px;
+      }
+
+      .container_list dt {
+        font-size: 20px;
+        background-color: pink;
+        border: 1px solid palevioletred;
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <dl class="container_list">
+      <dt>A</dt>
+      <dd>Abu</dd>
+      <hr />
+      <dd>Aina</dd>
+      <hr />
+      <dd>Asghar</dd>
+      <hr />
+      <dd>Asher</dd>
+      <hr />
+      <dd>Aaron</dd>
+
+      <dt>B</dt>
+      <dd>Bakar</dd>
+      <hr />
+      <dd>Bilal</dd>
+      <hr />
+      <dd>Bilawal</dd>
+      <hr />
+      <dd>Brandon</dd>
+      <hr />
+      <dd>Brooks</dd>
+
+      <dt>C</dt>
+      <dd>Charlie</dd>
+      <hr />
+      <dd>Catherine</dd>
+      <hr />
+      <dd>Colin</dd>
+      <hr />
+      <dd>Camille</dd>
+      <hr />
+      <dd>Cecilia</dd>
+
+      <dt>D</dt>
+      <dd>Daniya</dd>
+      <hr />
+      <dd>Danial</dd>
+      <hr />
+      <dd>Dariya</dd>
+      <hr />
+      <dd>Daniya</dd>
+      <hr />
+      <dd>Darika</dd>
+
+      <dt>E</dt>
+      <dd>Easton</dd>
+      <hr />
+      <dd>Eli</dd>
+      <hr />
+      <dd>Ezra</dd>
+      <hr />
+      <dd>Evan</dd>
+      <hr />
+      <dd>Elias</dd>
+
+      <dt>F</dt>
+      <dd>Frankie</dd>
+      <hr />
+      <dd>Fynn</dd>
+      <hr />
+      <dd>Fitzgerald</dd>
+      <hr />
+      <dd>Finnigan</dd>
+      <hr />
+      <dd>Farhan</dd>
+    </dl>
+  </body>
+</html>
