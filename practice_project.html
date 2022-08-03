@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Comfortaa", cursive;
+        font-family: "Poiret One", cursive;
+      }
+
+      body::-webkit-scrollbar {
+        height: 10px;
+        background-color: yellow;
+        border: 1px solid black;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: red;
+        border: 1px solid black;
+        width: 10px;
+        border-radius: 4px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        gap: 10px;
+        background-color: yellow;
+        border: 2px solid black;
+        margin-top: 200px;
+      }
+
+      @media screen and (max-width: 770px) {
+        .card {
+          flex-direction: column;
+          margin-top: 0;
+        }
+      }
+
+      .card_content {
+        position: relative;
+        background-color: red;
+        border: 2px solid black;
+        text-align: center;
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        font-size: 19px;
+      }
+
+      .card_content::after,
+      .card_content:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .card_content::after {
+        content: "GO";
+        bottom: 15px;
+        right: 15px;
+        color: black;
+        font-size: 20px;
+        opacity: 0;
+      }
+
+      .card_content:hover::after {
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
+
+      .card_content:before {
+        border-style: solid;
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #fff transparent;
+        transition: border 0.25s;
+      }
+
+      .card_content:hover::before {
+        border-width: 0 0 100px 100px;
+      }
+      span {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h5 class="card_content">Instagram <span class="one">CLICK ME☻</span></h5>
+      <h5 class="card_content">Facebook <span class="one">CLICK ME☻</span></h5>
+      <h5 class="card_content">Twitter <span class="one">CLICK ME☻</span></h5>
+      <h5 class="card_content">Snapchat <span class="one">CLICK ME☻</span></h5>
+    </div>
+  </body>
+</html>
