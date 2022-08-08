@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Comfortaa", cursive;
+        cursor: grab;
+      }
+
+      button {
+        width: 100%;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 4px black;
+      }
+      button:hover {
+        box-shadow: none;
+      }
+
+      h4,
+      h5 {
+        text-align: center;
+      }
+
+      h5 {
+        font-size: 30px;
+        text-shadow: 0 0 4px black;
+        -webkit-text-stroke: 1px black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Click The Button Below & See The Magic</h4>
+      <button onclick="virus()">CLICK ME</button>
+      <h5>made by Mohsin khan</h5>
+    </div>
+
+    <script>
+      function virus() {
+        for (i = 0; i < 10; i + 50) {
+          console.log(i);
+        }
+      }
+
+      //   console.log(virus());
+    </script>
+  </body>
+</html>
